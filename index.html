@@ -1,0 +1,262 @@
+<!-- Bienvenido/a a mi primer portfolio web, espero que tu estancia sea agradable por estos lares de divs. 
+El diseño de esta web esta enfocado a parecerse a una terminal. También, la página va al grano. No quería 
+explayarme mucho con textos. Hay un 'easter egg' en el logo del nav, si te resulta difícil encontrarlo 
+puedes consultar el script de JS.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Logo del título -->
+    <link rel="icon" type="image/png" href="images/Logo Blanco.png"/>
+    <!-- He utilizado la librería de Font Awasome para los iconos -->
+    <script src="https://kit.fontawesome.com/eb060fcc4c.js" crossorigin="anonymous"></script>
+    <title>inigo[dev]</title>
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <div class="container">
+        <nav>
+            <div class="logo" id="logo">
+                <h2>inigo<span>[dev]</span></h2>
+            </div>
+
+            <div class="redes_sociales">
+                <a href="https://github.com/Inigo-lab" target="_blank"><img src="images/icons8-github-50.png" class="github"></a>
+                <a href="https://www.linkedin.com/in/i%C3%B1igo-acosta-zayas" target="_blank"><img src="images/icons8-linkedin-50.png" class="linkedin"></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main -->
+    <div class="container">
+        <header>
+            <div class="texto">
+                <h2><span class="texto_cambia"></span></h2>
+                <h2 class="nombre">Soy <span>Iñigo Acosta</span></h2>
+                <p class="desc">Soy un apasionado de aprender y mantenerme actualizado sobre las últimas tendencias y tecnologías en el
+                    mundo de la programación. Es esencial para el éxito en esta industria y estoy comprometido a
+                    mantenerme en la cima de mi juego para proporcionar el mejor trabajo posible en cada proyecto en el que
+                    trabajo.</p>
+                <p class="contact"><a href="cv/Íñigo-Acosta-Zayas-CV.pdf" download="iñigo-acosta-cv" style="text-decoration: none;" target="_blank"><span>Descargar CV</span></a></p>
+            </div>
+
+            <div class="imagen" id="img">
+                <div class="imglogo">
+                    <img src="images/Logo Blanco.png">
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- Lenguajes -->
+    <div class="container">
+        <div class="lenguajes">
+            <div class="lngcontent">
+                <div class="html">
+                    <h2>HTML</h2>
+                    <p><i class="fa-brands fa-html5 fa-beat fa-2xl"></i></p>
+                </div>
+                <div class="css">
+                    <h2>CSS</h2>
+                    <p><i class="fa-brands fa-css3-alt fa-beat fa-2xl"></i></p>
+                </div>
+                <div class="js">
+                    <h2>JavaScript</h2>
+                    <p><i class="fa-brands fa-js fa-beat fa-2xl"></i></p>
+                </div>
+                <div class="java">
+                    <h2>Java</h2>
+                    <p><i class="fa-brands fa-java fa-beat fa-2xl"></i></p>
+                </div>
+                <div class="kotlin">
+                    <h2>Kotlin</h2>
+                    <p><i class="fa-brands fa-android fa-beat fa-2xl"></i></p>
+                </div>
+                <div class="swift">
+                    <h2>Swift</h2>
+                    <p><i class="fa-brands fa-swift fa-beat fa-2xl"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio -->
+    <div class="container">
+        <div class="proyectos">
+            <div class="headings">
+                <h2 class="heading">Proyectos</h2>
+                <a href="#contacto" style="text-decoration: none;"><p class="contact"><span>Contacto</span></p></a>
+            </div>
+
+            <div class="imgproyecto">
+                <div class="img_content">
+                    <div class="pro">
+                        <img src="images/gatos app.png" alt="">
+                        <div class="overlay">
+                            <div class="over_content">
+                                <p><a href="https://github.com/Inigo-lab/app-gatos" target="_blank">Ver código</a></p>
+                                <p><a>Aplicación de Android que utiliza una API para obtener las características de cada raza de gato</a></p>
+                            </div>
+                        </div>
+                        <h3 class="txt1">App Gatos</h3>
+                        <p class="txt2">Kotlin <i class="fa-brands fa-android fa-xl"></i></p>
+                    </div>
+                    <div class="pro">
+                        <img src="images/cine web.png" alt="">
+                        <div class="overlay">
+                            <div class="over_content">
+                                <p><a href="https://github.com/Inigo-lab/inigo-lab.github.io" target="_blank">Ver código</a></p>
+                                <p><a>Página web de cine realizada con Bootstrap. Obtén información de los últimos estrenos y consulta información de la cartelera</a></p>
+                            </div>
+                        </div>
+                        <h3 class="txt1">Página Web de Cine</h3>
+                        <p class="txt2">HTML CSS <i class="fa-brands fa-html5 fa-xl"></i> <i class="fa-brands fa-css3-alt fa-xl"></i></p>
+                    </div>
+                    <div class="pro">
+                        <img src="images/rickmorty.jpeg" alt="">
+                        <div class="overlay">
+                            <div class="over_content">
+                                <p><a href="https://github.com/Inigo-lab/app-rick-and-morty" target="_blank">Ver código</a></p>
+                                <p><a>Aplicación de iOS que consulta la API de Rick&Morty para obtener información de los personajes</a></p>
+                            </div>
+                        </div>
+                        <h3 class="txt1">App Rick & Morty</h3>
+                        <p class="txt2">Swift <i class="fa-brands fa-swift fa-xl"></i></p>
+                    </div>
+                    <div class="pro">
+                        <img src="images/calculadora app.png" alt="">
+                        <div class="overlay">
+                            <div class="over_content">
+                                <p><a href="https://github.com/Inigo-lab/calculadoraswift" target="_blank">Ver código</a></p>
+                                <p><a>App de calculadora en iOS. Realiza tus operaciones con su simpática interfaz</a></p>
+                            </div>
+                        </div>
+                        <h3 class="txt1">Calculadora</h3>
+                        <p class="txt2">Swift <i class="fa-brands fa-swift fa-xl"></i></p>
+                    </div>
+                    <div class="pro">
+                        <img src="images/tiempo app.png" alt="">
+                        <div class="overlay">
+                            <div class="over_content">
+                                <p><a href="https://github.com/Inigo-lab/apptiempo" target="_blank">Ver código</a></p>
+                                <p><a>Aplicación de Android que consulta una API del tiempo y obtiene tu ubicación para mostrarte la predicción meteorológica</a></p>
+                            </div>
+                        </div>
+                        <h3 class="txt1">APP Tiempo</h3>
+                        <p class="txt2">Kotlin <i class="fa-brands fa-android fa-xl"></i></p>
+                    </div>
+                    <div class="pro">
+                        <img src="images/coches web.png" alt="">
+                        <div class="overlay">
+                            <div class="over_content">
+                                <p><a href="https://github.com/Inigo-lab/vehiculos" target="_blank">Ver código</a></p>
+                                <p><a>Página web administrativa para añadir o buscar vehículos en su base de datos. Utiliza una conexión entre Backend y Frontend</a></p>
+                            </div>
+                        </div>
+                        <h3 class="txt1">Web de Vehículos</h3>
+                        <p class="txt2">HTML JavaScript Java <i class="fa-brands fa-html5 fa-xl"></i> <i class="fa-brands fa-js fa-xl"></i> <i class="fa-brands fa-java fa-xl"></i></p>
+                    </div>
+                </div>
+            </div>
+
+        
+        </div>
+    </div>
+
+    
+    <!-- Sobre mi -->
+    <div class="container" id="services">
+        <h2 class="heading">Conóceme</h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-regular fa-lightbulb fa-2xl"></i>
+                <h3>Ideas sin fin</h3>
+                <p>La creatividad es el motor que me impulsa para llevar a cabo soluciones innovadoras. Por eso,
+                    me encanta crear e ir más allá de lo establecido.
+                </p>
+            </div>
+
+
+            <div class="services-box">
+                <i class="fa-solid fa-gear fa-spin fa-2xl"></i>
+                <h3>Pienso, luego existo</h3>
+                <p>Los retos lógicos son mi pasión. Me apasiona identificar y analizar los problemas y búscar
+                    la solución más óptima.
+                </p>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-handshake fa-2xl"></i>
+                <h3>La unión hace la fuerza</h3>
+                <p>Considero que una de las claves del éxito es el trabajo en equipo. He contribuido en proyectos conjuntos,
+                    aprendiendo de los demás y nutriéndome de experiencias para ser la mejor versión de mi mismo.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Contacto -->
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="contacto_container">
+                <div class="contacto_campos">
+                    <div class="contacto_detalles">
+                        <h2 class="heading">Contacto</h2>
+                        <p>Estoy abierto a cualquier propuesta. Si tienes alguna idea en mente y quieres llevarla a la realidad,
+                            no dudes en contactarme. 
+                        </p>
+                    </div>
+                    <div class="formulario">
+                        <form action="mailto:ini5000acosta@gmail.com" enctype="text/plain">
+                            <input type="text" placeholder="NOMBRE" required>
+                            <input type="text" placeholder="EMAIL" required>
+                            <textarea name="" id="" cols="10" rows="5" placeholder="MENSAJE" required></textarea>
+                            <button type="submit">ENVIAR</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_content">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <h2>inigo<span>[dev]</span></h2>
+                    </div>
+        
+                    <div class="redes_sociales">
+                        <a href="https://github.com/Inigo-lab" target="_blank"><img src="images/icons8-github-50.png" class="github"></a>
+                        <a href="https://www.linkedin.com/in/i%C3%B1igo-acosta-zayas" target="_blank"><img src="images/icons8-linkedin-50.png" class="linkedin"></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Script de Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Script de Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+</html>

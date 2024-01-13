@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Grotesk';
+    background-color: #151515;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.heading{
+    font-size: 3rem;
+    color: white;
+}
+
+
+/* Contacto */
+
+.contact span{
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.contact span::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: #4ee1a0;
+    height: 2px;
+    bottom: -10px;
+}
+
+/* Cambiar color de contacto al pasar el cursor */
+.contact span:hover{
+    color: #4ee1a0;
+}
+
+
+/* NAVEGACIÓN */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 2rem 0;
+    z-index: 10;
+}
+
+nav .logo{
+    font-size: 1.2rem;
+    cursor: pointer;
+    -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+nav .logo span{
+    color: #4ee1a0;
+}
+
+nav .redes_sociales img{
+    width: 35%;
+    padding-left: 15px;
+}
+
+
+/* MAIN */
+
+header{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .texto h2{
+    font-size: 5rem;
+    letter-spacing: 5px;
+    color: white;
+}
+
+header .texto .nombre span{
+    position: relative;
+}
+
+/* Subrayar el nombre */
+header .texto .nombre span::before{
+    position: absolute;
+    width: 100%;
+    content: "";
+    background-color: #4ee1a0;
+    height: 5px;
+    bottom: 0;
+}
+
+header .texto .desc{
+    color: #d9d9d9;
+    width: 50%;
+    margin: 2rem 0;
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+
+header .texto .contact span{
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+header .texto .contact span::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: #4ee1a0;
+    height: 2px;
+    bottom: -10px;
+}
+
+
+header .texto .contact span:hover{
+    color: #4ee1a0;
+}
+
+header .imagen{
+    width: 50%;
+    position: relative;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+header .imagen .imglogo img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* Código antiguo logo */
+/* header .imagen > img{
+    position: absolute;
+    object-fit: cover;
+    top: 70%;
+    transform: translate(-50%, -50%);
+} */
+
+/* header::before{
+    position: absolute;
+    content: "";
+    background-color: #242424;
+    height: 3px;
+    width: 70%;
+    bottom: -5%;
+} */
+
+
+/* Lenguajes */
+
+.lenguajes{
+    color: white;
+    width: 110%;
+    position: relative;
+}
+
+.lenguajes .lngcontent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+    margin: 6rem 0;
+}
+
+.lenguajes h2{
+    font-size: 2.5rem;
+}
+
+
+/* Portfolio */
+
+.proyectos{
+    margin: 3rem 0;
+}
+
+.headings{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgproyecto{
+    margin: 2rem 0;
+}
+
+.img_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.img_content p{
+    color: #d9d9d9;
+}
+
+.img_content img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.pro{
+    position: relative;
+    cursor: pointer;
+}
+
+/* Overlay de los proyectos */
+
+.pro .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 91.5%;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: none;
+}
+
+.over_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.over_content p{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.over_content p a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #4ee1a0;
+}
+
+/* Revelar links al pasar el cursor */
+.pro:hover .overlay{
+    display: block;
+}
+
+
+/* Contacto */
+
+
+footer{
+    background-color: #242424;
+}
+
+.contacto_container{
+    padding: 4rem 0;
+}
+
+.contacto_campos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem;
+}
+
+.contacto_detalles{
+    color: white;
+    text-align: justify;
+    width: 70%;
+}
+
+.contacto_detalles p{
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.formulario form input, textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    background: transparent;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1rem;
+    resize: none;
+}
+
+.formulario button{
+    display: block;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+.formulario button:hover{
+    border-bottom: 1px solid #4ee1a0;
+    color: #4ee1a0;
+}
+
+.footer_content{
+    background-color: #151515;
+}
+
+/* Sobre mí */
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background: #242424;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #f2f2f2;
+    transition: .5s ease;
+}
+
+.services-container .services-box:hover {
+    border-color: #4ee1a0;
+    transform: scale(1.02);
+}
+
+.services-box i {
+    color: white;
+}
+
+.services-box h3 {
+    font-size: 2.6rem;
+    color: #4ee1a0;
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+    color: #f2f2f2;
+}
+
+
+
+/* Animaciones */
+
+
+/* Animación imagen logo */
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Animación logo github y linkedin hover */
+.github:hover{
+    animation: rotate-scale-up 0.6s ease-in-out both;
+}
+
+.linkedin:hover{
+    animation: rotate-scale-up 0.6s ease-in-out both;
+}
+
+@keyframes rotate-scale-up {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+}
+
+/* Animación logo hover */
+.logo:hover{
+    -webkit-animation: tracking-out-expand-fwd 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: tracking-out-expand-fwd 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/* Logo se expande */
+@-webkit-keyframes tracking-out-expand-fwd {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.8;
+    }
+    100% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      opacity: 0;
+    }
+  }
+  @keyframes tracking-out-expand-fwd {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.8;
+    }
+    100% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      opacity: 0;
+    }
+}
+
+/* Logo se contrae */
+@-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
